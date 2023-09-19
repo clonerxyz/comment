@@ -1,1 +1,2 @@
-# comment
+<?php
+phpinfo();
