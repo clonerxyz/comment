@@ -7,10 +7,10 @@
     "routes": [
         {
             "src": "/(css|js|txt)/(.*)",
-            "dest": "public/$1/$2"
+            "dest": "/public/$1/$2"
         },
         {
-            "src": "/(.*)",
+            "src": "/api",
             "dest": "/api/index.php"
         }
     ]
