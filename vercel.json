@@ -6,6 +6,6 @@
   },
   "routes": [
     { "src": "/push",  "dest": "/api/index.php" },
-	{ "src": "/data",  "dest": "data.txt" }
+	{ "src": "/data",  "dest": "/public/data.txt" }
   ]
 }
