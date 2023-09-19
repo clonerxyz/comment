@@ -8,7 +8,7 @@
 <?php
 if(isset($_POST['namadata']) && isset($_POST['haridan']) && isset($_POST['textdata'])) {
     $data = $_POST['namadata'] . '-' . $_POST['haridan'] . '-' . $_POST['textdata'] . "\r\n";
-    $ret = file_put_contents('data.txt', $data, FILE_APPEND | LOCK_EX);
+    $ret = file_put_contents('/public/data.txt', $data, FILE_APPEND | LOCK_EX);
     if($ret === false) {
 		header("Location: https://www.dhanidansellywedding.site/");
         die('There was an error writing this file');
