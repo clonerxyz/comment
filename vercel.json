@@ -5,7 +5,7 @@
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php" },
+    { "src": "/push",  "dest": "/api/index.php" },
 	{ "src": "/data",  "dest": "data.txt" }
   ]
 }
