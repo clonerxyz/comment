@@ -10,22 +10,17 @@ if(isset($_POST['namadata']) && isset($_POST['haridan']) && isset($_POST['textda
     $data = $_POST['namadata'] . '-' . $_POST['haridan'] . '-' . $_POST['textdata'] . "\r\n";
     $ret = file_put_contents('data.txt', $data, FILE_APPEND | LOCK_EX);
     if($ret === false) {
+		header("Location: https://www.dhanidansellywedding.site/");
         die('There was an error writing this file');
-		echo '<script type="text/javascript">
-           window.location = "https://www.dhanidansellywedding.site/"
-      </script>';
     }
     else {
         echo "$ret bytes written to file";
-		echo '<script type="text/javascript">
-           window.location = "https://www.dhanidansellywedding.site/"
-      </script>';
+		header("Location: https://www.dhanidansellywedding.site/");
+		die('success');
     }
 }
 else {
-   echo '<script type="text/javascript">
-           window.location = "https://www.dhanidansellywedding.site/"
-      </script>';
+   header("Location: https://www.dhanidansellywedding.site/");
    die('no post data to process');
 }
  </body>
