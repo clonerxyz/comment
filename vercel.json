@@ -13,5 +13,5 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
-    ],
+    ]
 }
