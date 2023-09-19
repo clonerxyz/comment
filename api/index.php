@@ -6,7 +6,7 @@
 <?php echo $_POST["textdata"]; ?><br>
 
 <?php
-$txt = "../public/data.txt"; 
+$txt = "/public/data.txt"; 
 if (isset($_POST['namadata']) && isset($_POST['haridan'])) { // check if both fields are set
     $fh = fopen($txt, 'a'); 
     $txt=$_POST['namadata'].' \r\n '.$_POST['haridan'].' \r\n '.$_POST['textdata'].''; 
